@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41fc694e-b6e6-4aee-972f-404a08c10af1" name="Changes" comment="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2eMztMffTkOW213Sql8XTngteqm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.controller.executor": "Run",
+    "Python.dictionary.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.view.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41fc694e-b6e6-4aee-972f-404a08c10af1" name="Changes" comment="" />
+      <created>1711729448511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711729448511</updated>
+      <workItem from="1711729498805" duration="280000" />
+      <workItem from="1711729860952" duration="2154000" />
+      <workItem from="1711732151455" duration="2255000" />
+      <workItem from="1711740235079" duration="1587000" />
+      <workItem from="1711741837830" duration="3000" />
+      <workItem from="1711788452563" duration="4222000" />
+      <workItem from="1711811504748" duration="5082000" />
+      <workItem from="1711818088509" duration="1167000" />
+      <workItem from="1711819324446" duration="203000" />
+      <workItem from="1711819543747" duration="1367000" />
+    </task>
+    <task id="LOCAL-00001" summary="mi dà ancora errore con i segni di punteggiatura + non capisco bene cosa intende nell'ultimo punto del lab">
+      <option name="closed" value="true" />
+      <created>1711792679725</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711792679725</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <option name="closed" value="true" />
+      <created>1711817761810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711817761810</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <option name="closed" value="true" />
+      <created>1711818859798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711818859798</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <option name="closed" value="true" />
+      <created>1711819056446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711819056446</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <option name="closed" value="true" />
+      <created>1711819142856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711819142856</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?">
+      <option name="closed" value="true" />
+      <created>1711819801073</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711819801073</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mi dà ancora errore con i segni di punteggiatura + non capisco bene cosa intende nell'ultimo punto del lab" />
+    <MESSAGE value="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Risolto più o meno tutto il laboratorio 4, rimangono pochi&#10;questi da chiedere al docente:&#10;1) è normale dover modificare anche la funzione di ricerca (es. ricerca dicotomica etc...)? Sarebbe meglio modificare nella classe SpellChecker??&#10;2) è normale che venga un tempo diverso da quello presente nello screenshot del laboratorio, anche se è poco più grande?" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Lab04$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1711733429999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab04$main.coverage" NAME="main Coverage Results" MODIFIED="1711820745916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab04$view.coverage" NAME="view Coverage Results" MODIFIED="1711740319220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab04$controller.coverage" NAME="controller Coverage Results" MODIFIED="1711820742211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

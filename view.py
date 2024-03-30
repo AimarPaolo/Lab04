@@ -26,10 +26,10 @@ class View(object):
                    alignment=ft.MainAxisAlignment.START)
         )
         # Add your stuff here
-        self._selectLanguage = ft.Dropdown(label="Select language", width=600)
+        self._selectLanguage = ft.Dropdown(label="Select language", width=600, on_change=self.__controller.handleChange1)
         self.fillWords(1)
         row2 = ft.Row([self._selectLanguage])
-        self._searchModality = ft.Dropdown(label="Search Modality ", width=200)
+        self._searchModality = ft.Dropdown(label="Search Modality ", width=200, on_change=self.__controller.handleChange2)
         self._txtIn = ft.TextField(label="Add your sentence here", width=200)
         self._btnCheck = ft.ElevatedButton(text="Spell Check", on_click=self.__controller.handleSpellCheck)
         self.fillWords(2)
@@ -68,6 +68,6 @@ class View(object):
 
         if numero == 2:
             self._searchModality.options.append(ft.dropdown.Option("Linear"))
-            self._searchModality.options.append(ft.dropdown.Option("Contains"))
+            self._searchModality.options.append(ft.dropdown.Option("Default"))
             self._searchModality.options.append(ft.dropdown.Option("Dichotomic"))
 
