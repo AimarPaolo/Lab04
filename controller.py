@@ -1,8 +1,22 @@
 import time
 import flet as ft
 import model as md
-
 class SpellChecker:
+    def handleSpellCheck(self, e):
+        multidizio = md.MultiDictionary()
+        self._view._lvOut.controls.clear()
+        fraseInserita = self._view._txtIn.value
+        self._view._txtIn.value = ""
+        modalitaRicerca = self._view._searchModality.value
+        lingua = self._view._selectLanguage.value
+        listaParole = fraseInserita.split(" ")
+        paroleErrate, tempo = multidizio.printWord(listaParole, lingua, modalitaRicerca)
+        if modalitaRicerca == None or lingua == None:
+            self._view._lvOut.controls.append(ft.Text("Non sono stati inseriti i valori richiesti", color="red"))
+            self._view.update()
+            return
+        self._view._lvOut.controls.append(ft.Text(f"Frase inserita: {fraseInserita}\nParole errate: - {paroleErrate}\nTempo richiesto dalla ricerca: {tempo}"))
+        self._view.update()
 
     def __init__(self, view):
         self._multiDic = md.MultiDictionary()

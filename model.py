@@ -1,6 +1,7 @@
+import time
+
 import dictionary as d
 import richWord as rw
-
 class MultiDictionary:
 
     def __init__(self):
@@ -97,6 +98,36 @@ class MultiDictionary:
 
         return parole
 
+    def printWord(self, words, language, method):
+        stringa = None
+        start = time.time()
+        if method == "Dichotomic":
+            lista = self.searchWordDichotomic(words, language)
+            for parola in lista:
+                print(parola.corretta)
+                if parola.corretta is not True:
+                    if stringa is None:
+                        stringa = str(parola.__str__())
+                    else:
+                        stringa += " " + str(parola.__str__())
+        elif method == "Contains":
+            lista = self.searchWord(words, language)
+            for parola in lista:
+                if parola.corretta is not True:
+                    if stringa is None:
+                        stringa = str(parola.__str__())
+                    else:
+                        stringa += " " + str(parola.__str__())
+        elif method == "Linear":
+            lista = self.searchWordLinear(words, language)
+            for parola in lista:
+                if parola.corretta is not True:
+                    if stringa is None:
+                        stringa = str(parola.__str__())
+                    else:
+                        stringa += " "+str(parola.__str__())
+        end = time.time()
+        return stringa, end-start
 
 def dichotomicSearch(word, currentDic):
     start = 0

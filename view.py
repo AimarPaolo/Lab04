@@ -22,18 +22,26 @@ class View(object):
         self.__title = ft.Text("TdP 2024 - Lab 04 - SpellChecker ++", size=24, color="blue")
         self.__theme_switch = ft.Switch(label="Light theme", on_change=self.theme_changed)
         self.page.controls.append(
-            ft.Row(spacing=30, controls=[self.__theme_switch, self.__title, ],
+            ft.Row(spacing=30, controls=[self.__theme_switch, self.__title],
                    alignment=ft.MainAxisAlignment.START)
         )
-
         # Add your stuff here
-
-        self.page.add([])
-
+        self._selectLanguage = ft.Dropdown(label="Select language", width=600)
+        self.fillWords(1)
+        row2 = ft.Row([self._selectLanguage])
+        self._searchModality = ft.Dropdown(label="Search Modality ", width=200)
+        self._txtIn = ft.TextField(label="Add your sentence here", width=200)
+        self._btnCheck = ft.ElevatedButton(text="Spell Check", on_click=self.__controller.handleSpellCheck)
+        self.fillWords(2)
+        row3 = ft.Row([self._searchModality, self._txtIn, self._btnCheck])
+        self._lvOut = ft.ListView()
+        row4 = ft.Row([self._lvOut])
+        self.page.add(row2, row3, row4)
         self.page.update()
 
     def update(self):
         self.page.update()
+
     def setController(self, controller):
         self.__controller = controller
     def theme_changed(self, e):
@@ -51,3 +59,15 @@ class View(object):
         #     ft.colors.GREY_900 if self.page.theme_mode == ft.ThemeMode.DARK else ft.colors.GREY_300
         # )
         self.page.update()
+
+    def fillWords(self, numero):
+        if numero == 1:
+            self._selectLanguage.options.append(ft.dropdown.Option("english"))
+            self._selectLanguage.options.append(ft.dropdown.Option("italian"))
+            self._selectLanguage.options.append(ft.dropdown.Option("spanish"))
+
+        if numero == 2:
+            self._searchModality.options.append(ft.dropdown.Option("Linear"))
+            self._searchModality.options.append(ft.dropdown.Option("Contains"))
+            self._searchModality.options.append(ft.dropdown.Option("Dichotomic"))
+
