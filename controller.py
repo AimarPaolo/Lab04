@@ -3,25 +3,38 @@ import flet as ft
 import model as md
 class SpellChecker:
     def handleSpellCheck(self, e):
-        multidizio = md.MultiDictionary()
-        self._view._lvOut.controls.clear()
-        fraseInserita = self._view._txtIn.value
-        self._view._txtIn.value = ""
         modalitaRicerca = self._view._searchModality.value
         lingua = self._view._selectLanguage.value
-        listaParole = fraseInserita.split(" ")
-        paroleErrate, tempo = multidizio.printWord(listaParole, lingua, modalitaRicerca)
         if modalitaRicerca == None or lingua == None:
+            self._view._lvOut.controls.clear()
             self._view._lvOut.controls.append(ft.Text("Non sono stati inseriti i valori richiesti", color="red"))
             self._view.update()
             return
+        fraseInserita = self._view._txtIn.value
+        if fraseInserita == "":
+            self._view._lvOut.controls.clear()
+            self._view._lvOut.controls.append(ft.Text("Non hai inserito nessuna frase!!!", color="red"))
+            self._view.update()
+            return
+        multidizio = md.MultiDictionary()
+        self._view._lvOut.controls.clear()
+        self._view._txtIn.value = ""
+        listaParole = fraseInserita.split(" ")
+        paroleErrate, tempo = multidizio.printWord(listaParole, lingua, modalitaRicerca)
         self._view._lvOut.controls.append(ft.Text(f"Frase inserita: {fraseInserita}\nParole errate: - {paroleErrate}\nTempo richiesto dalla ricerca: {tempo}"))
         self._view.update()
 
-    def __init__(self, view):
+    def _init_(self, view):
         self._multiDic = md.MultiDictionary()
         self._view = view
 
+    def handleChange1(self, e):
+        self._view._lvOut.controls.append(ft.Text(f"Hai selezionato la lingua: {self._view._selectLanguage.value}"))
+        self._view.update()
+
+    def handleChange2(self, e):
+        self._view._lvOut.controls.append(ft.Text(f"Hai selezionato il tipo di ricerca: {self._view._searchModality.value}"))
+        self._view.update()
     def handleSentence(self, txtIn, language, modality):
         txtIn = replaceChars(txtIn.lower())
 
@@ -60,19 +73,19 @@ class SpellChecker:
 
 
     def printMenu(self):
-        print("______________________________\n" +
+        print("__________\n" +
               "      SpellChecker 101\n"+
-              "______________________________\n " +
+              "__________\n " +
               "Seleziona la lingua desiderata\n"
               "1. Italiano\n" +
               "2. Inglese\n" +
               "3. Spagnolo\n" +
               "4. Exit\n" +
-              "______________________________\n")
+              "__________\n")
 
 
 def replaceChars(text):
-    chars = "\\`*_{}[]()>#+-.!$?%^;,=_~"
+    chars = "\\`*{}[]()>#+-.!$?%^;,=~"
     for c in chars:
         text = text.replace(c, "")
     return text
